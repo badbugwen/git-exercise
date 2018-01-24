@@ -1,7 +1,6 @@
-#read me
-git clone https://github.com/badbugwen/git-exercise.git
+# Add your own tasks in files placed in lib/tasks ending in .rake,
+# for example lib/tasks/capistrano.rake, and they will automatically be available to Rake.
 
-cd git-exercise
-bundle install
-rails db:migrate
-rails db:seed
+require_relative 'config/application'
+
+Rails.application.load_tasks
